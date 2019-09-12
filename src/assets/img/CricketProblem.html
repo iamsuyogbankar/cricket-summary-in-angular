@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>CricketProblem</title>
+  <!--<base href="/">--><base href=".">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+  <link rel="stylesheet" href="./CricketProblem_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./CricketProblem_files/flag-icon.css">
+<style type="text/css">/* You can add global styles to this file, and also import other style files */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RSIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cbiJdfQ== */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */</style><style>.cards-list[_ngcontent-dtq-c1] {
+    z-index: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+  
+  .card[_ngcontent-dtq-c1] {
+    margin: 30px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .card[_ngcontent-dtq-c1]   .card_image[_ngcontent-dtq-c1] {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card[_ngcontent-dtq-c1]   .card_image[_ngcontent-dtq-c1]   img[_ngcontent-dtq-c1] {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .card[_ngcontent-dtq-c1]   .card_title[_ngcontent-dtq-c1] {
+    
+    
+    
+    
+    
+    margin-top: -230px;
+    margin-left: 20px;
+    
+  }
+  
+  .data[_ngcontent-dtq-c1]{
+      color: white;  
+  }
+  
+  .data[_ngcontent-dtq-c1]   .team[_ngcontent-dtq-c1]{
+      margin-left: 90px;
+      font-size: 20px;
+  }
+  
+  .date[_ngcontent-dtq-c1]{
+      font-size: 15px;      
+      margin-left: 5px;  
+  }
+  
+  .maindata[_ngcontent-dtq-c1]{
+      margin: 20px;
+  }
+  
+  .decision[_ngcontent-dtq-c1]{
+      font-size: 15px;
+      margin: 10px;
+      margin-left: 25px;
+  }
+  
+  .card[_ngcontent-dtq-c1]:hover {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white[_ngcontent-dtq-c1] {
+    color: white;
+  }
+  
+  .title-black[_ngcontent-dtq-c1] {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list[_ngcontent-dtq-c1] {
+      
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+    }
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY3JpY2tldC1zaG93L2NyaWNrZXQtc2hvdy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLFdBQVc7SUFDWCxvQkFBYTtJQUFiLGFBQWE7SUFDYixtQ0FBbUM7SUFDbkMsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixrRkFBa0Y7SUFDbEYsZUFBZTtJQUNmLHdCQUFnQjtJQUFoQixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxjQUFjO0lBQ2QsZUFBZTtJQUNmLG1CQUFtQjtFQUNyQjs7RUFFQTtJQUNFLGNBQWM7SUFDZCxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG9CQUFpQjtPQUFqQixpQkFBaUI7RUFDbkI7O0VBRUE7SUFDRSx3QkFBd0I7SUFDeEIsc0NBQXNDO0lBQ3RDLDZCQUE2QjtJQUM3Qix1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsa0JBQWtCO0VBQ3BCOztFQUNBO01BQ0ksWUFBWTtFQUNoQjs7RUFDQTtNQUNJLGlCQUFpQjtNQUNqQixlQUFlO0VBQ25COztFQUNBO01BQ0ksZUFBZTtNQUNmLGdCQUFnQjtFQUNwQjs7RUFDQTtNQUNJLFlBQVk7RUFDaEI7O0VBQ0E7TUFDSSxlQUFlO01BQ2YsWUFBWTtNQUNaLGlCQUFpQjtFQUNyQjs7RUFFQTtJQUNFLGtDQUEwQjtZQUExQiwwQkFBMEI7SUFDMUI7MENBQ3NDO0VBQ3hDOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0U7TUFDRSxzRUFBc0U7TUFDdEUsNEJBQXNCO01BQXRCLDZCQUFzQjtjQUF0QixzQkFBc0I7SUFDeEI7RUFDRiIsImZpbGUiOiJzcmMvYXBwL2NyaWNrZXQtc2hvdy9jcmlja2V0LXNob3cuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkcy1saXN0IHtcclxuICAgIHotaW5kZXg6IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDsgKi9cclxuICAgIGZsZXgtd3JhcDogd3JhcDtcclxuICB9XHJcbiAgXHJcbiAgLmNhcmQge1xyXG4gICAgbWFyZ2luOiAzMHB4IGF1dG87XHJcbiAgICB3aWR0aDogMjUwcHg7XHJcbiAgICBoZWlnaHQ6IDI1MHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNDBweDtcclxuICAgIGJveC1zaGFkb3c6IDVweCA1cHggMzBweCA3cHggcmdiYSgwLDAsMCwwLjI1KSwgLTVweCAtNXB4IDMwcHggN3B4IHJnYmEoMCwwLDAsMC4yMik7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICB0cmFuc2l0aW9uOiAwLjRzO1xyXG4gIH1cclxuICBcclxuICAuY2FyZCAuY2FyZF9pbWFnZSB7XHJcbiAgICB3aWR0aDogaW5oZXJpdDtcclxuICAgIGhlaWdodDogaW5oZXJpdDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDQwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5jYXJkIC5jYXJkX2ltYWdlIGltZyB7XHJcbiAgICB3aWR0aDogaW5oZXJpdDtcclxuICAgIGhlaWdodDogaW5oZXJpdDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDQwcHg7XHJcbiAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxuICB9XHJcbiAgXHJcbiAgLmNhcmQgLmNhcmRfdGl0bGUge1xyXG4gICAgLyogdGV4dC1hbGlnbjogY2VudGVyOyAqL1xyXG4gICAgLyogYm9yZGVyLXJhZGl1czogMHB4IDBweCA0MHB4IDQwcHg7ICovXHJcbiAgICAvKiBmb250LWZhbWlseTogc2Fucy1zZXJpZjsgKi9cclxuICAgIC8qIGZvbnQtd2VpZ2h0OiBib2xkOyAqL1xyXG4gICAgLyogZm9udC1zaXplOiAyMHB4OyAqL1xyXG4gICAgbWFyZ2luLXRvcDogLTIzMHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6IDIwcHg7XHJcbiAgICAvKiBoZWlnaHQ6IDQwcHg7ICovXHJcbiAgfVxyXG4gIC5kYXRhe1xyXG4gICAgICBjb2xvcjogd2hpdGU7ICBcclxuICB9XHJcbiAgLmRhdGEgLnRlYW17XHJcbiAgICAgIG1hcmdpbi1sZWZ0OiA5MHB4O1xyXG4gICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgfVxyXG4gIC5kYXRle1xyXG4gICAgICBmb250LXNpemU6IDE1cHg7ICAgICAgXHJcbiAgICAgIG1hcmdpbi1sZWZ0OiA1cHg7ICBcclxuICB9XHJcbiAgLm1haW5kYXRhe1xyXG4gICAgICBtYXJnaW46IDIwcHg7XHJcbiAgfVxyXG4gIC5kZWNpc2lvbntcclxuICAgICAgZm9udC1zaXplOiAxNXB4O1xyXG4gICAgICBtYXJnaW46IDEwcHg7XHJcbiAgICAgIG1hcmdpbi1sZWZ0OiAyNXB4O1xyXG4gIH1cclxuICAgIFxyXG4gIC5jYXJkOmhvdmVyIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMC45LCAwLjkpO1xyXG4gICAgYm94LXNoYWRvdzogNXB4IDVweCAzMHB4IDE1cHggcmdiYSgwLDAsMCwwLjI1KSwgXHJcbiAgICAgIC01cHggLTVweCAzMHB4IDE1cHggcmdiYSgwLDAsMCwwLjIyKTtcclxuICB9XHJcbiAgXHJcbiAgLnRpdGxlLXdoaXRlIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgXHJcbiAgLnRpdGxlLWJsYWNrIHtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICB9XHJcbiAgXHJcbiAgQG1lZGlhIGFsbCBhbmQgKG1heC13aWR0aDogNTAwcHgpIHtcclxuICAgIC5jYXJkLWxpc3Qge1xyXG4gICAgICAvKiBPbiBzbWFsbCBzY3JlZW5zLCB3ZSBhcmUgbm8gbG9uZ2VyIHVzaW5nIHJvdyBkaXJlY3Rpb24gYnV0IGNvbHVtbiAqL1xyXG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG4gIH0iXX0= */</style></head>
+<body>
+  <app-root _nghost-dtq-c0="" ng-version="8.1.3"><div _ngcontent-dtq-c0="" class="container"><router-outlet _ngcontent-dtq-c0=""></router-outlet><app-cricket-show _nghost-dtq-c1=""><div _ngcontent-dtq-c1="" class="container"><div _ngcontent-dtq-c1="" class="col-md-12 col-sm-12 col-xs-12"><div _ngcontent-dtq-c1="" class="row"><div _ngcontent-dtq-c1="" class="col-md-3 col-sm-3 col-xs-3"><div _ngcontent-dtq-c1="" class="cards-list"><div _ngcontent-dtq-c1="" class="card 1"><div _ngcontent-dtq-c1="" class="card_image"><img _ngcontent-dtq-c1="" src="./CricketProblem_files/cricket.jpg"></div><div _ngcontent-dtq-c1="" class="card_title title-white"><span _ngcontent-dtq-c1="" class="date">12/09/2019 ODI 12 Of 30</span></div><div _ngcontent-dtq-c1="" class="data"><span _ngcontent-dtq-c1="" class="team" style="text-align: center !important;">Team</span><br _ngcontent-dtq-c1=""><div _ngcontent-dtq-c1="" class="maindata"><span _ngcontent-dtq-c1="" class="flag-icon flag-icon-squared flag-icon-gb"></span><span _ngcontent-dtq-c1=""> England </span><span _ngcontent-dtq-c1=""> 311/8(50)</span><div _ngcontent-dtq-c1="" class="mt-4"><span _ngcontent-dtq-c1="" class="flag-icon flag-icon-squared flag-icon-in"></span><span _ngcontent-dtq-c1=""> India </span><span _ngcontent-dtq-c1=""> 312/4(40)</span></div></div><div _ngcontent-dtq-c1=""><span _ngcontent-dtq-c1="" class="decision">India Won by 6 wickets.</span></div></div></div></div></div></div></div></div></app-cricket-show></div></app-root>
+<script src="./CricketProblem_files/runtime.js.download" type="module"></script><script src="./CricketProblem_files/polyfills.js.download" type="module"></script><script src="./CricketProblem_files/styles.js.download" type="module"></script><script src="./CricketProblem_files/vendor.js.download" type="module"></script><script src="./CricketProblem_files/main.js.download" type="module"></script>
+
+</body></html>

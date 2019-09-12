@@ -1,0 +1,310 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./$$_lazy_route_resource lazy recursive":
+/*!******************************************************!*\
+  !*** ./$$_lazy_route_resource lazy namespace object ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
+/*!**************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <router-outlet></router-outlet>    \n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/cricket-show/cricket-show.component.html":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/cricket-show/cricket-show.component.html ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"col-md-12 col-sm-12 col-xs-12\">\n        <div class=\"row\">\n            <div class=\"col-md-3 col-sm-3 col-xs-3\">\n                <div class=\"cards-list\">\n                    <div class=\"card 1\">\n                        <div class=\"card_image\"> <img src=\"../../assets//img/cricket.jpg\"/> </div>\n                        <div class=\"card_title title-white\">\n                            <!-- <p>Live Score</p> -->\n                            <span class=\"date\">12/09/2019 ODI 12 Of 30</span>\n                        </div>\n                        <div class=\"data\">\n                            <span class=\"team\" style=\"text-align: center !important;\">Team</span><br>\n                            <div class=\"maindata\">\n                                <span class=\"flag-icon flag-icon-squared flag-icon-gb\"></span>\n                                <span> England </span><span> 311/8(50)</span>\n                                <div class=\"mt-4\">\n                                    <span class=\"flag-icon flag-icon-squared flag-icon-in\"></span>\n                                    <span> India </span><span> 312/4(40)</span>\n                                </div>                          \n                            </div>\n                            <div>\n                                <span class=\"decision\">India Won by 6 wickets.</span>\n                            </div>\n                        </div>\n                    </div>   \n                </div>\n            </div>            \n        </div>\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _cricket_show_cricket_show_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cricket-show/cricket-show.component */ "./src/app/cricket-show/cricket-show.component.ts");
+
+
+
+
+const routes = [
+    { path: '', component: _cricket_show_cricket_show_component__WEBPACK_IMPORTED_MODULE_3__["CricketShowComponent"] },
+];
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AppComponent = class AppComponent {
+    constructor() {
+        this.title = 'CricketProblem';
+    }
+};
+AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-root',
+        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
+        styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+    })
+], AppComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _cricket_show_cricket_show_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./cricket-show/cricket-show.component */ "./src/app/cricket-show/cricket-show.component.ts");
+
+
+
+
+
+
+let AppModule = class AppModule {
+};
+AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        declarations: [
+            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+            _cricket_show_cricket_show_component__WEBPACK_IMPORTED_MODULE_5__["CricketShowComponent"]
+        ],
+        imports: [
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+        ],
+        providers: [],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+    })
+], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/cricket-show/cricket-show.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/cricket-show/cricket-show.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".cards-list {\r\n    z-index: 0;\r\n    width: 100%;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    /* justify-content: space-around; */\r\n    flex-wrap: wrap;\r\n  }\r\n  \r\n  .card {\r\n    margin: 30px auto;\r\n    width: 250px;\r\n    height: 250px;\r\n    border-radius: 40px;\r\n    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);\r\n    cursor: pointer;\r\n    -webkit-transition: 0.4s;\r\n    transition: 0.4s;\r\n  }\r\n  \r\n  .card .card_image {\r\n    width: inherit;\r\n    height: inherit;\r\n    border-radius: 40px;\r\n  }\r\n  \r\n  .card .card_image img {\r\n    width: inherit;\r\n    height: inherit;\r\n    border-radius: 40px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n  }\r\n  \r\n  .card .card_title {\r\n    /* text-align: center; */\r\n    /* border-radius: 0px 0px 40px 40px; */\r\n    /* font-family: sans-serif; */\r\n    /* font-weight: bold; */\r\n    /* font-size: 20px; */\r\n    margin-top: -230px;\r\n    margin-left: 20px;\r\n    /* height: 40px; */\r\n  }\r\n  \r\n  .data{\r\n      color: white;  \r\n  }\r\n  \r\n  .data .team{\r\n      margin-left: 90px;\r\n      font-size: 20px;\r\n  }\r\n  \r\n  .date{\r\n      font-size: 15px;      \r\n      margin-left: 5px;  \r\n  }\r\n  \r\n  .maindata{\r\n      margin: 20px;\r\n  }\r\n  \r\n  .decision{\r\n      font-size: 15px;\r\n      margin: 10px;\r\n      margin-left: 25px;\r\n  }\r\n  \r\n  .card:hover {\r\n    -webkit-transform: scale(0.9, 0.9);\r\n            transform: scale(0.9, 0.9);\r\n    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), \r\n      -5px -5px 30px 15px rgba(0,0,0,0.22);\r\n  }\r\n  \r\n  .title-white {\r\n    color: white;\r\n  }\r\n  \r\n  .title-black {\r\n    color: black;\r\n  }\r\n  \r\n  @media all and (max-width: 500px) {\r\n    .card-list {\r\n      /* On small screens, we are no longer using row direction but column */\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n              flex-direction: column;\r\n    }\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY3JpY2tldC1zaG93L2NyaWNrZXQtc2hvdy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLFdBQVc7SUFDWCxvQkFBYTtJQUFiLGFBQWE7SUFDYixtQ0FBbUM7SUFDbkMsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixrRkFBa0Y7SUFDbEYsZUFBZTtJQUNmLHdCQUFnQjtJQUFoQixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxjQUFjO0lBQ2QsZUFBZTtJQUNmLG1CQUFtQjtFQUNyQjs7RUFFQTtJQUNFLGNBQWM7SUFDZCxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG9CQUFpQjtPQUFqQixpQkFBaUI7RUFDbkI7O0VBRUE7SUFDRSx3QkFBd0I7SUFDeEIsc0NBQXNDO0lBQ3RDLDZCQUE2QjtJQUM3Qix1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsa0JBQWtCO0VBQ3BCOztFQUNBO01BQ0ksWUFBWTtFQUNoQjs7RUFDQTtNQUNJLGlCQUFpQjtNQUNqQixlQUFlO0VBQ25COztFQUNBO01BQ0ksZUFBZTtNQUNmLGdCQUFnQjtFQUNwQjs7RUFDQTtNQUNJLFlBQVk7RUFDaEI7O0VBQ0E7TUFDSSxlQUFlO01BQ2YsWUFBWTtNQUNaLGlCQUFpQjtFQUNyQjs7RUFFQTtJQUNFLGtDQUEwQjtZQUExQiwwQkFBMEI7SUFDMUI7MENBQ3NDO0VBQ3hDOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0U7TUFDRSxzRUFBc0U7TUFDdEUsNEJBQXNCO01BQXRCLDZCQUFzQjtjQUF0QixzQkFBc0I7SUFDeEI7RUFDRiIsImZpbGUiOiJzcmMvYXBwL2NyaWNrZXQtc2hvdy9jcmlja2V0LXNob3cuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkcy1saXN0IHtcclxuICAgIHotaW5kZXg6IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDsgKi9cclxuICAgIGZsZXgtd3JhcDogd3JhcDtcclxuICB9XHJcbiAgXHJcbiAgLmNhcmQge1xyXG4gICAgbWFyZ2luOiAzMHB4IGF1dG87XHJcbiAgICB3aWR0aDogMjUwcHg7XHJcbiAgICBoZWlnaHQ6IDI1MHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNDBweDtcclxuICAgIGJveC1zaGFkb3c6IDVweCA1cHggMzBweCA3cHggcmdiYSgwLDAsMCwwLjI1KSwgLTVweCAtNXB4IDMwcHggN3B4IHJnYmEoMCwwLDAsMC4yMik7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICB0cmFuc2l0aW9uOiAwLjRzO1xyXG4gIH1cclxuICBcclxuICAuY2FyZCAuY2FyZF9pbWFnZSB7XHJcbiAgICB3aWR0aDogaW5oZXJpdDtcclxuICAgIGhlaWdodDogaW5oZXJpdDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDQwcHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5jYXJkIC5jYXJkX2ltYWdlIGltZyB7XHJcbiAgICB3aWR0aDogaW5oZXJpdDtcclxuICAgIGhlaWdodDogaW5oZXJpdDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDQwcHg7XHJcbiAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxuICB9XHJcbiAgXHJcbiAgLmNhcmQgLmNhcmRfdGl0bGUge1xyXG4gICAgLyogdGV4dC1hbGlnbjogY2VudGVyOyAqL1xyXG4gICAgLyogYm9yZGVyLXJhZGl1czogMHB4IDBweCA0MHB4IDQwcHg7ICovXHJcbiAgICAvKiBmb250LWZhbWlseTogc2Fucy1zZXJpZjsgKi9cclxuICAgIC8qIGZvbnQtd2VpZ2h0OiBib2xkOyAqL1xyXG4gICAgLyogZm9udC1zaXplOiAyMHB4OyAqL1xyXG4gICAgbWFyZ2luLXRvcDogLTIzMHB4O1xyXG4gICAgbWFyZ2luLWxlZnQ6IDIwcHg7XHJcbiAgICAvKiBoZWlnaHQ6IDQwcHg7ICovXHJcbiAgfVxyXG4gIC5kYXRhe1xyXG4gICAgICBjb2xvcjogd2hpdGU7ICBcclxuICB9XHJcbiAgLmRhdGEgLnRlYW17XHJcbiAgICAgIG1hcmdpbi1sZWZ0OiA5MHB4O1xyXG4gICAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgfVxyXG4gIC5kYXRle1xyXG4gICAgICBmb250LXNpemU6IDE1cHg7ICAgICAgXHJcbiAgICAgIG1hcmdpbi1sZWZ0OiA1cHg7ICBcclxuICB9XHJcbiAgLm1haW5kYXRhe1xyXG4gICAgICBtYXJnaW46IDIwcHg7XHJcbiAgfVxyXG4gIC5kZWNpc2lvbntcclxuICAgICAgZm9udC1zaXplOiAxNXB4O1xyXG4gICAgICBtYXJnaW46IDEwcHg7XHJcbiAgICAgIG1hcmdpbi1sZWZ0OiAyNXB4O1xyXG4gIH1cclxuICAgIFxyXG4gIC5jYXJkOmhvdmVyIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMC45LCAwLjkpO1xyXG4gICAgYm94LXNoYWRvdzogNXB4IDVweCAzMHB4IDE1cHggcmdiYSgwLDAsMCwwLjI1KSwgXHJcbiAgICAgIC01cHggLTVweCAzMHB4IDE1cHggcmdiYSgwLDAsMCwwLjIyKTtcclxuICB9XHJcbiAgXHJcbiAgLnRpdGxlLXdoaXRlIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgXHJcbiAgLnRpdGxlLWJsYWNrIHtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICB9XHJcbiAgXHJcbiAgQG1lZGlhIGFsbCBhbmQgKG1heC13aWR0aDogNTAwcHgpIHtcclxuICAgIC5jYXJkLWxpc3Qge1xyXG4gICAgICAvKiBPbiBzbWFsbCBzY3JlZW5zLCB3ZSBhcmUgbm8gbG9uZ2VyIHVzaW5nIHJvdyBkaXJlY3Rpb24gYnV0IGNvbHVtbiAqL1xyXG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG4gIH0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/cricket-show/cricket-show.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/cricket-show/cricket-show.component.ts ***!
+  \********************************************************/
+/*! exports provided: CricketShowComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CricketShowComponent", function() { return CricketShowComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let CricketShowComponent = class CricketShowComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+CricketShowComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-cricket-show',
+        template: __webpack_require__(/*! raw-loader!./cricket-show.component.html */ "./node_modules/raw-loader/index.js!./src/app/cricket-show/cricket-show.component.html"),
+        styles: [__webpack_require__(/*! ./cricket-show.component.css */ "./src/app/cricket-show/cricket-show.component.css")]
+    })
+], CricketShowComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+const environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node ./src/main.ts ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! E:\SUYOG-DATA\AngularPractise\CricketProblem\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node");
+module.exports = __webpack_require__(/*! E:\SUYOG-DATA\AngularPractise\CricketProblem\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map

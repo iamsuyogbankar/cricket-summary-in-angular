@@ -1,0 +1,53 @@
+<div class="container">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                    <div  class="modal-header " style="background-color: #80983a;color: white;">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Team Players</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="background-image: url('../../assets/img/new.jpg')">
+                        <ol>
+                            <li style="color: white;" *ngFor="let playername of teamArray; let i=index">{{ playername.name }}</li>
+                        </ol>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <h2 class="heading mx-auto mt-5">Cricket Scoreboard</h2>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3  mx-auto">
+                <div class="cards-list">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="../../assets//img/cricket.jpg"/> </div>
+                        <div class="card_title title-white">
+                            <span class="date">Match Summary</span>
+                        </div>
+                        <div class="data">
+                            <span class="team" style="text-align: center !important;">12/09/2019 ODI 12 Of 30</span><br>
+                            <div class="maindata">
+                                <span class="flag-icon flag-icon-squared flag-icon-gb"></span>
+                                <a href="#" class="link" (click)="onClickEngland()" data-toggle="modal" data-target="#exampleModalCenter"> England <span> 311/8(50)</span></a>
+                                <div class="mt-4">
+                                    <span class="flag-icon flag-icon-squared flag-icon-in"></span>
+                                    <a href="#" class="link" (click)="onClickIndia()" data-toggle="modal" data-target="#exampleModalCenter"> India <span> 312/4(40)</span></a>
+                                </div>                          
+                            </div>
+                            <div>
+                                <span class="decision">India Won by 6 wickets.</span>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div> 
+            
+        </div>
+    </div>
+</div>
